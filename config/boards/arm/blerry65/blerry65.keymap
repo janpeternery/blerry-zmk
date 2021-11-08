@@ -13,18 +13,18 @@
 
 		default_layer {
 // -----------------------------------------------------------------------------------------
-//   | ESC   | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 0     | -     | =     | BACKSPACE     | HOME   |
-//   | TAB   | Q     | W     | E     | R     | T     | Y     | U     | I     | O     | P     | [     | ]     | \             | END    |
+//   | ESC   | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 0     | -     | =     | \ |   DEL   | HOME   |
+//   | TAB   | Q     | W     | E     | R     | T     | Y     | U     | I     | O     | P     | [     | ]     | BSPC             | END    |
 //   | CAPS  | A     | S     | D     | F     | G     | H     | J     | K     | L     | ;     | '     |         ENTER         | PG UP  |
 //   | SHIFT | Z     | X     | C     | V     | B     | N     | M     | ,     | .     | /     |         SHIFT        | UP     | PG DN  |
 //   | CTRL  | GUI   | ALT   |                 SPACE                                 | ALT   | FN    |         LEFT | DOWN   | RIGHT  |
 
 			bindings = <
-    &kp ESC          &kp NUM_1        &kp NUM_2     &kp NUM_3     &kp NUM_4     &kp NUM_5        &kp NUM_6        &kp NUM_7        &kp NUM_8        &kp NUM_9        &kp NUM_0        &kp MINUS        &kp EQL          &kp BSPC         &kp HOME
-    &kp TAB          &kp Q            &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P            &kp LBKT         &kp RBKT         &kp BSLH         &kp END
+    &kp ESC          &kp NUM_1        &kp NUM_2     &kp NUM_3     &kp NUM_4     &kp NUM_5        &kp NUM_6        &kp NUM_7        &kp NUM_8        &kp NUM_9        &kp NUM_0        &kp MINUS        &kp EQL          &kp BSLH          &kp DEL         &kp HOME      
+    &kp TAB          &kp Q            &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P            &kp LBKT         &kp RBKT         &kp BSPC         &kp END
     &kp CAPS         &kp A            &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &kp SCLN         &kp QUOT                          &kp ENTER        &kp PG_UP
-    &kp LSHFT        &kp Z            &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp CMMA         &kp DOT          &kp FSLH         &kp RSHFT                         &kp UP           &kp PG_DN
-	&kp LCTRL        &kp LGUI         &kp LALT                    &kp SPACE                                                                                          &kp RALT         &mo 1            &kp LEFT         &kp DOWN         &kp RIGHT
+    &kp LSHFT        &kp Z            &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp CMMA         &kp DOT          &kp FSLH         &kp RSHFT                         &kp UP           &mo 1
+	&kp LCTRL        &kp LWIN         &kp LALT                    &kp SPACE                                                                                          &kp RWIN         &kp RCTRL            &kp LEFT         &kp DOWN         &kp RIGHT
 			>;
 		};
 
@@ -37,8 +37,8 @@
 //   | TRANS | TRANS | TRANS |                        TRANS |                          TRANS | TRANS | TRANS |  TRANS | TRANS  |
 
 			bindings = <
-    &kp GRAVE        &kp F1           &kp F2           &kp F3          &kp F4          &kp F5        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12       &kp DEL         &trans
-    &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4  &trans           &trans           &trans           &trans           &trans           &kp UP           &trans        &trans          &trans
+    &kp GRAVE        &kp F1           &kp F2           &kp F3          &kp F4          &kp F5        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12       &trans	       &trans
+    &bt BT_CLR       &out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &trans           &trans           &trans           &trans           &trans           &kp UP           &trans        &trans          &trans
     &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &trans                         &bootloader     &trans
     &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &trans           &trans           &trans           &trans                         &trans          &trans
     &trans           &trans           &trans                           &trans                                                                                            &trans           &trans        &trans           &trans          &trans
